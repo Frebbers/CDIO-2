@@ -6,6 +6,6 @@ public class Printer {
     public void setLanguage(Language input){this.currentLanguage=input;}
     public void printPhrase(int phrase){System.out.println(currentLanguage.phraseOut(phrase));}
     public String getLanguage(){return this.currentLanguage;}
-    public void getErrorPhrase(int input){System.out.println(currentLanguage.errorPhraseOut(input));}
+    public void printErrorPhrase(int input){System.out.println(currentLanguage.errorPhraseOut(input));}
     
 }
