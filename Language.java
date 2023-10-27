@@ -5,11 +5,12 @@ public class Language {
     String winnerPhrase;
     
 
-    public Language (String locale, String[] phrase, String[] errorPhrase, String winnerPhrase){
+    public Language (String locale, String[] phrase, String[] errorPhrase, String winnerPhrase, String balancePhrase){
         this.locale = locale;
         this.phrase = phrase;
         this.errorPhrase = errorPhrase;
         this.winnerPhrase = winnerPhrase;
+        this.balancePhrase = balancePhrase;
     }
     public String getLocale() {return this.locale;}
     public String phraseOut(int input) {return phrase[input];}
@@ -33,7 +34,7 @@ return new Language("Danish", new String[]{
     "Terningerne viser 12... \n Du finder en guldmine fyldt med det pureste guld. Du fylder taskerne og sælger det for 650 mønter.",}, 
     //Error phrase(s)
     new String[] {"fejl 0, ugyldigt terningkast"}, 
-    "Spillet er slut. Vinderen er: Spiller ");
+    "Spillet er slut. Vinderen er: Spiller ", "Din nye møntbeholdning er: ");
 
     }
 }

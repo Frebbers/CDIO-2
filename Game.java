@@ -8,6 +8,7 @@ public class Game {
     new Die(6), new Die (6), 
     new Printer(Language.createDanishLanguage()));
     
+    //While loop which keeps starting turns until someone wins
     while (!game.checkWinner(game.player1) && !game.checkWinner(game.player2)){
         
         game.playTurn(game.player1);
