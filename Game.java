@@ -1,20 +1,31 @@
+import java.util.Scanner;
 public class Game {
-
+    //creating a scanner alias to be used in the game
+    
 
     public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
     //builds the game
-    Game game = new Game("Dimly lit places prisons and firebreathing birds", 
+    Game game = new Game("Dimly lit prisons and firebreathing birds", 
     new Player(1,1000), new Player(2,1000), 
     new Die(6), new Die (6), 
     new Printer(Language.createDanishLanguage()));
-    
+        
+
     //While loop which keeps starting turns until someone wins
     while (!game.checkWinner(game.player1) && !game.checkWinner(game.player2)){
         
-        game.playTurn(game.player1);
-        if (!game.checkWinner(game.player1)) {game.playTurn(game.player2);}
-        
 
+        // An empty string "enterKey" is created.
+        String enterKey = "";
+
+        //If the empty string "enterKey" is equal to the input from the user, a turn is played
+        if(enterKey == s.nextLine()){game.playTurn(game.player1);}
+        //a very ugly line of code that if player 1 has won, then if the enter key has been pressed, then plays a turn with player 2.
+        if (!game.checkWinner(game.player1)){if(enterKey == s.nextLine()) {game.playTurn(game.player2);}
+        
+        
+    }
     }
     
     }
