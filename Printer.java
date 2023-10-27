@@ -7,5 +7,5 @@ public class Printer {
     public void printPhrase(int phrase){System.out.println(currentLanguage.phraseOut(phrase));}
     public String getLanguage(){return this.currentLanguage;}
     public void printErrorPhrase(int input){System.out.println(currentLanguage.errorPhraseOut(input));}
-    
+    public void printWinnerPhrase(Player p){System.out.println(this.currentLanguage.)}
 }
