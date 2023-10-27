@@ -42,7 +42,7 @@ return new Language("Danish", new String[]{
     //balancePhrase:
     "Din nye møntbeholdning er: ",
     //turnstart:
-    "Tryk enter for at kaste terningerne");
+    "Tryk enter for at kaste terningerne. Det er din tur spiller: ");
 
     }
 }

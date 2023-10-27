@@ -9,6 +9,6 @@ public class Printer {
     public void printErrorPhrase(int input) {System.out.println(currentLanguage.errorPhraseOut(input));}
     //Prints that the winner is the player passed to the method
     public void printWinnerPhrase(int p) {System.out.println(this.currentLanguage.winnerPhrase+p);}
-    public void printPreturn() {System.out.println(currentLanguage.turnStart);}
+    public void printPreturn(int input) {System.out.println(currentLanguage.turnStart+ input);}
     public void printBalance(int input){System.out.println(currentLanguage.balancePhrase + input);}
 }

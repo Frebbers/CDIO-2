@@ -17,10 +17,15 @@ public class Game {
         
         // An empty string "enterKey" is created.
         String enterKey = "";
-        //If the empty string "enterKey" is equal to the input from the user, a turn is played
+        
+        game.printer.printPreturn(1);
+        //If user presses enter, a turn is played
         if(enterKey == s.nextLine()){game.playTurn(game.player1);}
-        //a very ugly line of code that if player 1 has won, then if the enter key has been pressed, then plays a turn with player 2.
-        if (!game.checkWinner(game.player1)){if(enterKey == s.nextLine()) {game.playTurn(game.player2);}
+        
+        //very ugly code that checks if player 1 has won, then if the enter key has been pressed, then plays a turn with player 2.
+        if (!game.checkWinner(game.player1)){
+            game.printer.printPreturn(2);
+            if(enterKey == s.nextLine()) {game.playTurn(game.player2);}
         
         
     }
