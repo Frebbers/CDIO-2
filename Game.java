@@ -15,10 +15,8 @@ public class Game {
     //While loop which keeps starting turns until someone wins
     while (!game.checkWinner(game.player1) && !game.checkWinner(game.player2)){
         
-
         // An empty string "enterKey" is created.
         String enterKey = "";
-
         //If the empty string "enterKey" is equal to the input from the user, a turn is played
         if(enterKey == s.nextLine()){game.playTurn(game.player1);}
         //a very ugly line of code that if player 1 has won, then if the enter key has been pressed, then plays a turn with player 2.
@@ -80,7 +78,10 @@ public class Game {
     if ((index) >= 0 && (index) < (scoreCard.length)) {
         //add score to player total and print message
         player.addScore(scoreCard[index]);
+        //prints the phrase associated with the field the player has landed on
         this.printer.printPhrase(index);
+        //prints current balance
+        this.printer.printBalance(player.getScore());
     }
     //print error 0, invalid dice roll
     else {this.printer.printErrorPhrase(0);}
