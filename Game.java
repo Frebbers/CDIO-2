@@ -69,7 +69,7 @@ public class Game {
         scoreCard[10]= 650;
     }
 
-    //check me later!
+    //checks if a player has won
     public boolean checkWinner(Player player){return (player.getScore() >= 3000);}
     
     public void playTurn(Player player){
