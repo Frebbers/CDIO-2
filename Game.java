@@ -1,4 +1,11 @@
 public class Game {
+
+
+    public static void main(String[] args){
+    }
+
+
+
     private String name;
     private Die die1;
     private Die die2;
@@ -17,7 +24,7 @@ public class Game {
         this.die1 = die1;
         this.die2 = die2;
         this.printer = printer;
-        
+
        //assign values to scorecard
         scoreCard[0]=250;
         scoreCard[1]=-100;
