@@ -5,7 +5,8 @@ public class Printer {
     
     public void setLanguage(Language input){this.currentLanguage=input;}
     public void printPhrase(int phrase){System.out.println(currentLanguage.phraseOut(phrase));}
-    public String getLanguage(){return this.currentLanguage;}
+    public Language getLanguage(){return this.currentLanguage;}
     public void printErrorPhrase(int input){System.out.println(currentLanguage.errorPhraseOut(input));}
-    public void printWinnerPhrase(Player p){System.out.println(this.currentLanguage.)}
+    //Prints that the winner is the player passed to the method
+    public void printWinnerPhrase(int p){System.out.println(this.currentLanguage.winnerPhrase+p);}
 }
