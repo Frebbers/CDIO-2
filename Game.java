@@ -35,12 +35,12 @@ public class Game {
 
 
 
-    private String name;
-    private Die die1;
-    private Die die2;
-    private Player player1;
-    private Player player2;
-    private Printer printer;
+    public String name;
+    public Die die1;
+    public Die die2;
+    public Player player1;
+    public Player player2;
+    public Printer printer;
     public int[] scoreCard;
 
     
