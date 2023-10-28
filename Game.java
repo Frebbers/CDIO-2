@@ -4,6 +4,12 @@ public class Game {
     
 
     public static void main(String[] args){
+        test.testDie();
+       test.testGame();
+    }
+
+    public static void playGame(){
+        
         Scanner s = new Scanner(System.in);
     //builds the game
     Game game = new Game("Dimly lit prisons and firebreathing birds", 
@@ -32,7 +38,6 @@ public class Game {
     }
     s.close();
     }
-
 
 
     private String name;
