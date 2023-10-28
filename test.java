@@ -9,10 +9,10 @@ public class test {
     new Printer(Language.createDanishLanguage()));
 
     while (!testGame.checkWinner(testGame.player1) && !testGame.checkWinner(testGame.player2)) {
-        if (testGame.player.getScore() >3000) { System.out.println("ERROR! PLAYER 1 HAS ALREADY WON");}
+        if (testGame.player1.getScore() >3000) { System.out.println("ERROR! PLAYER 1 HAS ALREADY WON");}
         testGame.playTurn(testGame.player1);
         if (!testGame.checkWinner(testGame.player2)) {
-            if (testGame.player.getScore() > 3000) { System.out.println("ERROR! PLAYER 2 HAS ALREADY WON");}
+            if (testGame.player2.getScore() > 3000) { System.out.println("ERROR! PLAYER 2 HAS ALREADY WON");}
             testGame.playTurn(testGame.player2);}
     }
 }
