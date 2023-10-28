@@ -29,8 +29,10 @@ public class test {
 public static void testDie(){
     Die[] thousandDice = new Die[1000];
     for (int i = 0; i > 1000; i++) {
-    thousandDice[i]=new Die(i);
+    thousandDice[i]= new Die(i);
     thousandDice[i].roll();
+    int rollTest = (thousandDice[i].getValue());
+    System.out.println("Die with " + i + " sides rolled: " + rollTest);
     if (thousandDice[i].getValue()>i+1) {System.out.println("ERROR! dice roll exceeds dice faces!");}
     if (thousandDice[i].getValue()<1) {System.out.println("ERROR! dice roll less than one!");}
     }
