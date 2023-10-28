@@ -28,7 +28,7 @@ public class test {
 //Creates 1000 dice and rolls each of them, checking if any are invalid
 public static void testDie(){
     Die[] thousandDice = new Die[1000];
-    for (int i = 0; i > 1000; i++) {
+    for (int i = 1; i < 1001; i++) {
     thousandDice[i]= new Die(i);
     thousandDice[i].roll();
     int rollTest = (thousandDice[i].getValue());
