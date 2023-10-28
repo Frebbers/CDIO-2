@@ -5,7 +5,7 @@ public class Game {
 
     public static void main(String[] args){
         test.testDie();
-       // test.testGame();
+       test.testGame();
     }
 
     public static void playGame(){
